@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Components</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ test }}</p>
+      <greeting message="testing"></greeting>
+      <post :title="title" :author="author" :content="content"></post>
+    </div>
+    <template id="post-template">
+      <div>
+        <h1>{{ title }}</h1>
+        <h4>{{ author }}</h4>
+        <p>{{ content }}</p>
+      </div>
+    </template>
+    <template id="greeting-template">
+      <h1>{{ message }}</h1>
+    </template>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.1.10/dist/vue.js">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

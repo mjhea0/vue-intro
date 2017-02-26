@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue Intro</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>Enter a greeting: <input type="text" v-model="greeting"></p>
+      <br>
+      Enter your name: <input type="text" v-model="name"> <button v-on:click="sayHello">Hey there!</button>
+      <br><br>
+      <p>All Data:</p>
+      <p>{{ $data }}</p>
+    </div>
+    <hr>
+    <div id="app2">
+      <button @click="click">Click</button>
+      <div v-if="value">
+        <p>Yay!</p>
+      </div>
+      <div v-else>
+        <p>Nay!</p>
+      </div>
+    </div>
+    <div id="app3">
+      <ul>
+        <li v-for="(dog, index) in dogs">
+          {{ index }} - {{ dog.name }} - {{ dog.age }}
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.1.10/dist/vue.js">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
