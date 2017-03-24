@@ -223,7 +223,7 @@ var app = new Vue({
 });
 ```
 
-Use `Vue.component()` to create a new component, which takes two properties - components name and options. The latter is similar to the properties we used in the `Vue()` constructor. Add the following to the JavaScript file above the constructor.
+Use `Vue.component()` to create a new component, which takes two properties - component name and options. The latter is similar to the properties we used in the `Vue()` constructor. Add the following to the JavaScript file above the constructor.
 
 ```javascript
 Vue.component('greeting', {
